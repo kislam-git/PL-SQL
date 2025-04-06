@@ -26,7 +26,7 @@ Each question is organized with:
 
 > 💡 Click on any question to view its full explanation and example.
 
-1. [What is PL/SQL? How is it different from SQL? (With Example)](./questions/01-plsql-vs-sql.md)  
+1. [What is PL/SQL? How is it different from SQL? (With Example)](./Interview-Questions/What is PLSQL.md)  
 2. [What are the components of a PL/SQL block?](./questions/02-plsql-block-structure.md)  
 3. [What is a cursor in PL/SQL?](./questions/03-cursors.md)  
 4. [What is the difference between %TYPE and %ROWTYPE?](./questions/04-type-vs-rowtype.md)  

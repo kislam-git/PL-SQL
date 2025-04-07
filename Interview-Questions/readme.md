@@ -27,15 +27,15 @@ Each question is organized with:
 > 💡 Click on any question to view its full explanation and example.
 
 1. [What is PL/SQL? How is it different from SQL? (With Example)](./Basic/What-is-PLSQL.md)  
-2. [What are the components of a PL/SQL block?](./questions/02-plsql-block-structure.md)  
-3. [What is a cursor in PL/SQL?](./questions/03-cursors.md)  
-4. [What is the difference between %TYPE and %ROWTYPE?](./questions/04-type-vs-rowtype.md)  
-5. [What is exception handling in PL/SQL?](./questions/05-exception-handling.md)  
-6. [Difference between Procedure and Function in PL/SQL](./questions/06-procedure-vs-function.md)  
-7. [What are triggers in PL/SQL?](./questions/07-triggers.md)  
-8. [What are packages in PL/SQL?](./questions/08-packages.md)  
-9. [What is a FOR loop in PL/SQL?](./questions/09-for-loop.md)  
-10. [How to use RAISE_APPLICATION_ERROR in PL/SQL?](./questions/10-raise-application-error.md)
+2. What are the components of a PL/SQL block?
+3. What is a cursor in PL/SQL?
+4. What is the difference between %TYPE and %ROWTYPE?
+5. What is exception handling in PL/SQL?
+6. Difference between Procedure and Function in PL/SQL
+7. What are triggers in PL/SQL?
+8. What are packages in PL/SQL?
+9. What is a FOR loop in PL/SQL?
+10. How to use RAISE_APPLICATION_ERROR in PL/SQL?
 
 ---
 

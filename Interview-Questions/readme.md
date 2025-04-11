@@ -27,7 +27,7 @@ Each question is organized with:
 > 💡 Click on any question to view its full explanation and example.
 
 1. [What is PL/SQL? How is it different from SQL? (With Example)](./Basic/What-is-PLSQL.md)  
-2. [What are the components of a PL/SQL block?](./Basic/Component-of-PL-SQLBlock.md)
+2. [What are the components of a PL/SQL block?](./Basic/Components-of-PL-SQL-Block.md)
 3. What is a cursor in PL/SQL?
 4. What is the difference between %TYPE and %ROWTYPE?
 5. What is exception handling in PL/SQL?

@@ -90,6 +90,3 @@ END;
 - Both are great for **maintainability** and **consistency** in PL/SQL code
 
 ```
-
-Let me know when you're ready for the next question:  
-**"What is exception handling in PL/SQL?"** ✅

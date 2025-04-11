@@ -10,6 +10,20 @@ When you execute a `SELECT` statement that returns **more than one row**, you ne
 
 ---
 
+## Short answer for a Interview 
+
+---
+   A cursor in PL/SQL is a pointer to the result set of a SQL query. It allows us to fetch and process rows one at a time, especially useful when dealing with multi-row SELECT statements.
+   
+   There are two types:
+   * Implicit cursors: Handled automatically by Oracle for single-row queries.
+   * Explicit cursors: Manually defined for multi-row queries where we need more control.
+   
+   For example, I can use an explicit cursor to loop through all employees in a department and perform logic per row. I use cursor attributes like %NOTFOUND and %ROWCOUNT to manage the loop.
+   
+   Cursors are really helpful for report generation, row-level processing, and when we need precise control inside PL/SQL blocks."
+---
+
 ## 🧠 Types of Cursors
 
 | Type             | Description                                                                 |

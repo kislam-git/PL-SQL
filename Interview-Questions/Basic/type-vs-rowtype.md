@@ -1,5 +1,5 @@
 
-# ❓ Question 4: What is the Difference Between `%TYPE` and `%ROWTYPE` in PL/SQL?
+# ❓ What is the Difference Between `%TYPE` and `%ROWTYPE` in PL/SQL?
 
 ---
 

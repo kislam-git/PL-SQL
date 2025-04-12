@@ -60,13 +60,76 @@ END;
 
 ---
 
-## ⚠️ Rules for Overloading
+## ⚠️ Rules for Overloading — Explained Simply
 
-- Must differ in **number**, **order**, or **datatype** of parameters.
-- Return type **alone is not enough** to distinguish between overloaded versions.
-- Overloading helps make APIs **cleaner** and more **intuitive**.
+### ✅ 1. Must differ in **number**, **order**, or **datatype** of parameters
+
+When you overload a function or procedure, each version must have **something different in the parameter list** so Oracle can tell which one to run.
+
+### 🔸 Example 1: Different number of parameters
+
+```plsql
+-- Version 1
+PROCEDURE greet(name VARCHAR2);
+
+-- Version 2
+PROCEDURE greet(first_name VARCHAR2, last_name VARCHAR2);
+```
+
+These are fine because they take a different **number** of parameters.
 
 ---
+
+### 🔸 Example 2: Different datatype of parameters
+
+```plsql
+-- Version 1
+PROCEDURE log_message(p_message VARCHAR2);
+
+-- Version 2
+PROCEDURE log_message(p_message CLOB);
+```
+
+Here, the **parameter types** are different — one takes `VARCHAR2`, the other takes `CLOB`. That's allowed.
+
+---
+
+### 🔸 Example 3: Different **order** of parameters
+
+```plsql
+-- Version 1
+PROCEDURE add_item(id NUMBER, name VARCHAR2);
+
+-- Version 2
+PROCEDURE add_item(name VARCHAR2, id NUMBER);
+```
+
+These are okay too because even though both have 2 parameters, the **order** is different.
+
+---
+
+### 🚫 Not Allowed: Only return type is different
+
+```plsql
+-- Version 1
+FUNCTION get_salary(emp_id NUMBER) RETURN NUMBER;
+
+-- Version 2
+FUNCTION get_salary(emp_id NUMBER) RETURN VARCHAR2;  -- ❌ Not allowed
+```
+
+This will **cause an error**, because Oracle can’t tell which version to use — the **parameter list is the same**, and Oracle **doesn’t look at the return type** to decide.
+
+---
+
+## 🎯 Why these rules?
+
+Oracle must be able to decide **which version** of the function/procedure to call **just by looking at the parameters you pass**.
+
+If two versions look the same (same parameter list), it gets confused — and that’s not allowed.
+
+---
+
 
 ## 🧠 Real-World Use Case
 
